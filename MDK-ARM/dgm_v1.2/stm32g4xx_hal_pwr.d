@@ -1,0 +1,17 @@
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr.c
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Core/Inc/stm32g4xx_hal_conf.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g431xx.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/CMSIS/Include/core_cm4.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/CMSIS/Include/cmsis_version.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+dgm_v1.2\stm32g4xx_hal_pwr.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
