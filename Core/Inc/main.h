@@ -100,7 +100,7 @@ void Error_Handler(void);
 #endif
 
 /* USER CODE BEGIN Private defines */
-#define PWM_ARR 3400 // 20KHz
+#define PWM_ARR 3400 // 25KHz
 #define DT (0.00004f)
 #define CURRENT_MEAS_HZ		25000
 

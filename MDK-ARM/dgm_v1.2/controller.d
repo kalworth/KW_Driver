@@ -31,5 +31,6 @@ dgm_v1.2\controller.o: ../Core/Inc/foc_encoder.h
 dgm_v1.2\controller.o: ../Core/Inc/usr_config.h
 dgm_v1.2\controller.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 dgm_v1.2\controller.o: ../Core/Inc/trapTraj.h
+dgm_v1.2\controller.o: ../Core/Inc/pll.h
 dgm_v1.2\controller.o: ../Core/Inc/util.h
 dgm_v1.2\controller.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h

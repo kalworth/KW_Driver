@@ -21,5 +21,10 @@ dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal
 dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h
 dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h
 dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h
-dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h
-dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h
+dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h
+dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h
+dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h
+dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h
+dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h
+dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
+dgm_v1.2\stm32g4xx_hal_gpio.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h

@@ -698,6 +698,21 @@
               <FileType>1</FileType>
               <FilePath>../Core/Src/stm32g4xx_it.c</FilePath>
             </File>
+            <File>
+              <FileName>can.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\can.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32g4xx_hal_fdcan.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\stm32g4xx_hal_fdcan.c</FilePath>
+            </File>
+            <File>
+              <FileName>can_rcc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\can_rcc.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

@@ -3,15 +3,15 @@
         {
             "name": "dgm_v1.2",
             "includePath": [
-                "e:\\stm32_workspace_E\\dgm_v1.2\\Core\\Inc",
-                "e:\\stm32_workspace_E\\dgm_v1.2\\Drivers\\STM32G4xx_HAL_Driver\\Inc",
-                "e:\\stm32_workspace_E\\dgm_v1.2\\Drivers\\CMSIS\\Device\\ST\\STM32G4xx\\Include",
-                "e:\\stm32_workspace_E\\dgm_v1.2\\Drivers\\CMSIS\\Include",
+                "e:\\stm32_workspace_E\\dgm_v1.2_black\\Core\\Inc",
+                "e:\\stm32_workspace_E\\dgm_v1.2_black\\Drivers\\STM32G4xx_HAL_Driver\\Inc",
+                "e:\\stm32_workspace_E\\dgm_v1.2_black\\Drivers\\CMSIS\\Device\\ST\\STM32G4xx\\Include",
+                "e:\\stm32_workspace_E\\dgm_v1.2_black\\Drivers\\CMSIS\\Include",
                 "E:\\Keil_v5\\ARM\\ARMCC\\include",
                 "E:\\Keil_v5\\ARM\\ARMCC\\include\\rw",
-                "e:\\stm32_workspace_E\\dgm_v1.2\\MDK-ARM",
-                "e:\\stm32_workspace_E\\dgm_v1.2\\Core\\Src",
-                "e:\\stm32_workspace_E\\dgm_v1.2\\Drivers\\STM32G4xx_HAL_Driver\\Src"
+                "e:\\stm32_workspace_E\\dgm_v1.2_black\\MDK-ARM",
+                "e:\\stm32_workspace_E\\dgm_v1.2_black\\Core\\Src",
+                "e:\\stm32_workspace_E\\dgm_v1.2_black\\Drivers\\STM32G4xx_HAL_Driver\\Src"
             ],
             "defines": [
                 "STM32G431xx",

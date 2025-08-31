@@ -44,6 +44,7 @@ void USR_CONFIG_set_default_config(void)
     UsrConfig.can_id = 55;
     UsrConfig.can_timeout_ms = 0;
     UsrConfig.can_sync_target_enable = 0;
+
 }
 
 int USR_CONFIG_read_config(void)
@@ -57,6 +58,9 @@ int USR_CONFIG_read_config(void)
 	if(crc != UsrConfig.crc){
 		state = -1;
 	}
+
+    // CAN ID ÏÞÖÆ0~15
+	if(UsrConfig.can_id > 0xF){UsrConfig.can_id = 0xF;}
 	
 	return state;
 }

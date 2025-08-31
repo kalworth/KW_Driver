@@ -2,7 +2,7 @@
 #include "foc_encoder.h"
 #include "usr_config.h"
 #include "trapTraj.h"
-
+#include "pll.h"
 #include "util.h"
 
 ControllerStruct Controller;
@@ -40,6 +40,9 @@ void CONTROLLER_reset(ControllerStruct *controller)
 	controller->input_velocity = 0;
 	controller->input_current = 0;
 
+	controller->mit_kp = 0;
+	controller->mit_kd = 0;
+
 	mPosSetPoint = Encoder.position;
 	mVelSetPoint = 0;
 	mCurrSetPoint = 0;
@@ -58,7 +61,8 @@ float CONTROLLER_loop(ControllerStruct *controller, float velocity, float positi
 	case CONTROL_MODE_CURRENT:
 	{
 		// Current limiting
-		mCurrSetPoint = CLAMP(controller->input_current, -UsrConfig.current_limit, UsrConfig.current_limit);
+		float curr_tmp = controller->mit_kp*(controller->input_position-position) + controller->mit_kd*(controller->input_velocity-velocity)+controller->input_current;
+		mCurrSetPoint = CLAMP(curr_tmp, -UsrConfig.current_limit, UsrConfig.current_limit);
 		current_des = mCurrSetPoint;
 	}
 	break;

@@ -1,6 +1,12 @@
 {
     "files.associations": {
         "fsm.h": "c",
-        "usart.h": "c"
+        "usart.h": "c",
+        "can.h": "c",
+        "util.h": "c",
+        "calibration.h": "c",
+        "controller.h": "c",
+        "foc_handle.h": "c",
+        "usr_config.h": "c"
     }
 }

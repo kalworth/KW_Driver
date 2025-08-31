@@ -67,7 +67,7 @@ void MX_USART2_UART_Init(void)
   LL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /* USART2 interrupt Init */
-  NVIC_SetPriority(USART2_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),0, 0));
+  NVIC_SetPriority(USART2_IRQn, NVIC_EncodePriority(NVIC_GetPriorityGrouping(),3, 0));
   NVIC_EnableIRQ(USART2_IRQn);
 
   /* USER CODE BEGIN USART2_Init 1 */

@@ -7,6 +7,9 @@ typedef struct {
 	float input_position;
 	float input_velocity;
 	float input_current;
+
+	float mit_kp;
+	float mit_kd;
 } ControllerStruct;
 
 extern ControllerStruct Controller;

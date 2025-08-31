@@ -15,3 +15,16 @@ dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/sy
 dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
 dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
 dgm_v1.2\stm32g4xx_hal_pwr_ex.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
+dgm_v1.2\stm32g4xx_hal_pwr_ex.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h

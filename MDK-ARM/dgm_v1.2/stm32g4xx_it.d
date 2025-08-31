@@ -37,3 +37,5 @@ dgm_v1.2\stm32g4xx_it.o: ../Core/Inc/util.h
 dgm_v1.2\stm32g4xx_it.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\math.h
 dgm_v1.2\stm32g4xx_it.o: ../Core/Inc/usart.h
 dgm_v1.2\stm32g4xx_it.o: ../Core/Inc/pll.h
+dgm_v1.2\stm32g4xx_it.o: ../Core/Inc/can.h
+dgm_v1.2\stm32g4xx_it.o: ../Core/Inc/stm32g4xx_hal_fdcan.h

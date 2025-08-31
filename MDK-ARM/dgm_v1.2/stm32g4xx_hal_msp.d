@@ -22,17 +22,14 @@ dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma_ex.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h
-dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc.h
-dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h
-dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_adc_ex.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_exti.h
+dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h
-dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
-dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
+dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_rcc.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_bus.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_crs.h
@@ -44,6 +41,7 @@ dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_p
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dma.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_dmamux.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_spi.h
+dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_tim.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h
 dgm_v1.2\stm32g4xx_hal_msp.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h
 dgm_v1.2\stm32g4xx_hal_msp.o: E:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

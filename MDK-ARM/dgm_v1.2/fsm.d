@@ -37,4 +37,7 @@ dgm_v1.2\fsm.o: ../Core/Inc/controller.h
 dgm_v1.2\fsm.o: ../Core/Inc/util.h
 dgm_v1.2\fsm.o: ../Core/Inc/foc_encoder.h
 dgm_v1.2\fsm.o: ../Core/Inc/calibration.h
+dgm_v1.2\fsm.o: ../Core/Inc/can.h
+dgm_v1.2\fsm.o: ../Core/Inc/stm32g4xx_hal_fdcan.h
+dgm_v1.2\fsm.o: ../Core/Inc/systick.h
 dgm_v1.2\fsm.o: ../Core/Inc/usart.h

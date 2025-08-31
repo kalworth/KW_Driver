@@ -8,7 +8,7 @@
 #include "util.h"
 #include "foc_encoder.h"
 #include "calibration.h"
-//#include "can.h"
+#include "can.h"
 #include "usart.h"
 
 float vdata;
@@ -20,6 +20,7 @@ tFSM Fsm = {
 	.bytecount = 0,
 };
 
+uint8_t err_flag = 0;
 static volatile int mErrorCode = 0;
 static volatile int mErrorCodeLast = 0;
 
@@ -54,6 +55,9 @@ int FSM_input(char c)
 		{
 		case CMD_RESET:
 			NVIC_SystemReset();
+			break;
+		case 'd':
+			print_can_data();
 			break;
 		case CMD_GET_POSITION:
 			DEBUG("Position: %.4f\n\r", Encoder.position_output);
@@ -178,6 +182,13 @@ int FSM_input(char c)
 
 void FSM_loop(void)
 {
+	if(mErrorCode != 0){
+		err_flag = 1;
+	}
+	else{
+		err_flag = 0;
+	}
+
 	/* state transition management */
 	if (Fsm.next_state != Fsm.state)
 	{
@@ -201,6 +212,7 @@ void FSM_loop(void)
 	case FS_MOTOR_MODE:
 	{
 		float current_setpoint = CONTROLLER_loop(&Controller, Encoder.velocity, Encoder.position);
+		Foc.i_q_tar = current_setpoint;
 		FOC_current(&Foc, 0, current_setpoint, Encoder.elec_angle, Encoder.elec_angle);
 		//apply_voltage_timings(Foc.v_bus,0,current_setpoint,Encoder.elec_angle);
 

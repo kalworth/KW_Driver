@@ -35,6 +35,8 @@
 #include "fsm.h"
 #include <string.h>
 #include "pll.h"
+#include "can.h"
+#include "controller.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -117,9 +119,7 @@ int main(void)
   MX_TIM1_Init();
   MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
-	
-	SYSTICK_init();
-	
+
 	// ADC1 calibration
 	LL_ADC_StartCalibration(ADC1, LL_ADC_SINGLE_ENDED );
 	while(LL_ADC_IsCalibrationOnGoing(ADC1));
@@ -149,7 +149,6 @@ int main(void)
 	LL_ADC_EnableIT_JEOS(ADC1);
 	LL_ADC_EnableIT_JEOS(ADC2);
 	
-		// 时基定时器
 	LL_TIM_EnableIT_UPDATE(TIM6);
 	LL_TIM_EnableCounter(TIM6);
 	
@@ -179,8 +178,11 @@ int main(void)
 	SYSTICK_delay_ms(200);
 	FOC_zero_current(&Foc);
 	FSM_input(CMD_MENU);
-	
+  
 	LL_USART_EnableIT_RXNE_RXFNE(USART2);
+
+	MX_FDCAN1_Init();
+	//uint8_t data[8] = {0x10,0x20,0x30,0x40,0x50,0x60,0x70,0x80};
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -199,13 +201,14 @@ int main(void)
 			rx_len = 0;
 			memset(rx_buf, 0, sizeof(rx_buf));
 		}
-		
 //		DEBUG("%f,%f\r\n",Encoder.velocity_output,Pll.vel_estimate);
-//		DEBUG("%f,%f\r\n",Foc.i_d_filt,Foc.i_q_filt);
+//		DEBUG("%f,%f,%f\r\n",Foc.i_q_tar,Foc.i_d_filt,Foc.i_q_filt);
 //		DEBUG("%f\r\n",Encoder.position_output);
 //		DEBUG("%d,%d\r\n",Foc.adc_phase_a,Foc.adc_phase_b);
+//      DEBUG("%f,%f,%f\r\n",Encoder.position_output,Pll.vel_estimate,Foc.i_q_filt);
 ////		DEBUG("%f\r\n",loop_freq);		
-//		SYSTICK_delay_ms(1);
+//      DEBUG("%f,%f,%f,%f,%f\r\n",Controller.input_position,Controller.input_velocity,Controller.mit_kp,Controller.mit_kd,Controller.input_current);
+		
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
