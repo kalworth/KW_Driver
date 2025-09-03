@@ -10,7 +10,7 @@
 #include "calibration.h"
 #include "can.h"
 #include "usart.h"
-
+#include "pll.h"
 float vdata;
 
 tFSM Fsm = {
@@ -211,7 +211,7 @@ void FSM_loop(void)
 
 	case FS_MOTOR_MODE:
 	{
-		float current_setpoint = CONTROLLER_loop(&Controller, Encoder.velocity, Encoder.position);
+		float current_setpoint = CONTROLLER_loop(&Controller, Pll.vel_estimate, Encoder.position_output);
 		Foc.i_q_tar = current_setpoint;
 		FOC_current(&Foc, 0, current_setpoint, Encoder.elec_angle, Encoder.elec_angle);
 		//apply_voltage_timings(Foc.v_bus,0,current_setpoint,Encoder.elec_angle);

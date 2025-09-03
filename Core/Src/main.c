@@ -171,7 +171,7 @@ int main(void)
     DEBUG("\n\rConfig loaded faile set to default\n\r");
   }
 	
-	pll_speed_estimator_rad_init(&Pll, UsrConfig.current_ctrl_bandwidth/20);
+	pll_speed_estimator_rad_init(&Pll, UsrConfig.current_ctrl_bandwidth);
 	
   UsrConfig.control_mode = CONTROL_MODE_CURRENT;
 	UsrConfig.can_timeout_ms=1000;
@@ -206,6 +206,14 @@ int main(void)
 //		DEBUG("%f\r\n",Encoder.position_output);
 //		DEBUG("%d,%d\r\n",Foc.adc_phase_a,Foc.adc_phase_b);
 //      DEBUG("%f,%f,%f\r\n",Encoder.position_output,Pll.vel_estimate,Foc.i_q_filt);
+//		vofa_send_data(Encoder.position_output);
+//		vofa_send_data(Pll.vel_estimate);
+		// vofa_send_data(Foc.i_q_filt);
+//    vofa_send_data(Encoder.velocity_output);
+		// vofa_send_data(Foc.i_a);
+		// vofa_send_data(Foc.i_b);
+		// vofa_send_data(Foc.i_c);
+//		vofa_sendframetail();
 ////		DEBUG("%f\r\n",loop_freq);		
 //      DEBUG("%f,%f,%f,%f,%f\r\n",Controller.input_position,Controller.input_velocity,Controller.mit_kp,Controller.mit_kd,Controller.input_current);
 		

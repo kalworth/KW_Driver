@@ -119,4 +119,33 @@ void USART_SendArray(uint8_t *pData, uint16_t len)
         while (!LL_USART_IsActiveFlag_TC(USART2));
     }
 }
+
+
+#define MAX_BUFFER_SIZE 1024
+uint8_t send_buf[MAX_BUFFER_SIZE];
+uint16_t cnt = 0;
+void vofa_transmit(uint8_t* buf, uint16_t len)
+{
+    USART_SendArray((uint8_t *)buf, len);
+}
+
+void vofa_send_data(float data)
+{
+    send_buf[cnt++] = byte0(data);
+    send_buf[cnt++] = byte1(data);
+    send_buf[cnt++] = byte2(data);
+    send_buf[cnt++] = byte3(data);
+}
+
+void vofa_sendframetail(void)
+{
+    send_buf[cnt++] = 0x00;
+    send_buf[cnt++] = 0x00;
+    send_buf[cnt++] = 0x80;
+    send_buf[cnt++] = 0x7f;
+
+    /* 将数据和帧尾打包发送 */
+    vofa_transmit((uint8_t *)send_buf, cnt);
+    cnt = 0;// 每次发送完帧尾都需要清零
+}
 /* USER CODE END 1 */

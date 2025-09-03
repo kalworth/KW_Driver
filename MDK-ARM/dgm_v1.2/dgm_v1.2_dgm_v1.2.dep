@@ -61,7 +61,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h)(0x67695B6F)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h)(0x67695B6F)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
-F (..\Core\Src\foc_encoder.c)(0x6881D166)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\foc_encoder.o --omf_browse dgm_v1.2\foc_encoder.crf --depend dgm_v1.2\foc_encoder.d)
+F (..\Core\Src\foc_encoder.c)(0x68B71840)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\foc_encoder.o --omf_browse dgm_v1.2\foc_encoder.crf --depend dgm_v1.2\foc_encoder.d)
 I (../Core/Inc/foc_encoder.h)(0x6871504E)
 I (../Core/Inc/main.h)(0x68B2FEFE)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x67695B6F)
@@ -295,7 +295,7 @@ I (../Core/Inc/usr_config.h)(0x68B3D08F)
 I (../Core/Inc/fsm.h)(0x6875EF70)
 I (../Core/Inc/foc_encoder.h)(0x6871504E)
 I (../Core/Inc/systick.h)(0x687F3A13)
-F (..\Core\Src\fsm.c)(0x68B3D29C)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\fsm.o --omf_browse dgm_v1.2\fsm.crf --depend dgm_v1.2\fsm.d)
+F (..\Core\Src\fsm.c)(0x68B84FCE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\fsm.o --omf_browse dgm_v1.2\fsm.crf --depend dgm_v1.2\fsm.d)
 I (../Core/Inc/fsm.h)(0x6875EF70)
 I (../Core/Inc/main.h)(0x68B2FEFE)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x67695B6F)
@@ -337,8 +337,9 @@ I (../Core/Inc/calibration.h)(0x683B0286)
 I (../Core/Inc/can.h)(0x68B2F7C2)
 I (../Core/Inc/stm32g4xx_hal_fdcan.h)(0x6897A6A0)
 I (../Core/Inc/systick.h)(0x687F3A13)
-I (../Core/Inc/usart.h)(0x6880681F)
-F (..\Core\Src\controller.c)(0x68B3D25F)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\controller.o --omf_browse dgm_v1.2\controller.crf --depend dgm_v1.2\controller.d)
+I (../Core/Inc/usart.h)(0x68B71F91)
+I (../Core/Inc/pll.h)(0x6881D25E)
+F (..\Core\Src\controller.c)(0x68B442D1)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\controller.o --omf_browse dgm_v1.2\controller.crf --depend dgm_v1.2\controller.d)
 I (../Core/Inc/controller.h)(0x68B3D13A)
 I (../Core/Inc/main.h)(0x68B2FEFE)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x67695B6F)
@@ -406,7 +407,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (E:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (E:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (../Core/Inc/util.h)(0x68B32E9D)
-F (..\Core\Src\pll.c)(0x6881D73D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\pll.o --omf_browse dgm_v1.2\pll.crf --depend dgm_v1.2\pll.d)
+F (..\Core\Src\pll.c)(0x68B84F0B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\pll.o --omf_browse dgm_v1.2\pll.crf --depend dgm_v1.2\pll.d)
 I (../Core/Inc/pll.h)(0x6881D25E)
 I (../Core/Inc/main.h)(0x68B2FEFE)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x67695B6F)
@@ -438,7 +439,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (../Core/Inc/util.h)(0x68B32E9D)
 I (E:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (E:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
-F (../Core/Src/main.c)(0x68B3DE42)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\main.o --omf_browse dgm_v1.2\main.crf --depend dgm_v1.2\main.d)
+F (../Core/Src/main.c)(0x68B84FE1)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\main.o --omf_browse dgm_v1.2\main.crf --depend dgm_v1.2\main.d)
 I (../Core/Inc/main.h)(0x68B2FEFE)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x67695B6F)
 I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x67695B6A)
@@ -469,7 +470,7 @@ I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (../Core/Inc/adc.h)(0x6879B58E)
 I (../Core/Inc/spi.h)(0x6878D444)
 I (../Core/Inc/tim.h)(0x687F3811)
-I (../Core/Inc/usart.h)(0x6880681F)
+I (../Core/Inc/usart.h)(0x68B71F91)
 I (../Core/Inc/gpio.h)(0x6869A9BD)
 I (../Core/Inc/systick.h)(0x687F3A13)
 I (../Core/Inc/drv8323.h)(0x687DB227)
@@ -600,8 +601,8 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_usart.h)(0x67695B6F)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_gpio.h)(0x67695B6F)
 I (E:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (E:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
-F (../Core/Src/usart.c)(0x68B2AED2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\usart.o --omf_browse dgm_v1.2\usart.crf --depend dgm_v1.2\usart.d)
-I (../Core/Inc/usart.h)(0x6880681F)
+F (../Core/Src/usart.c)(0x68B71F82)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\usart.o --omf_browse dgm_v1.2\usart.crf --depend dgm_v1.2\usart.d)
+I (../Core/Inc/usart.h)(0x68B71F91)
 I (../Core/Inc/main.h)(0x68B2FEFE)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x67695B6F)
 I (../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h)(0x67695B6A)
@@ -666,11 +667,11 @@ I (../Core/Inc/foc_encoder.h)(0x6871504E)
 I (../Core/Inc/fsm.h)(0x6875EF70)
 I (../Core/Inc/util.h)(0x68B32E9D)
 I (E:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
-I (../Core/Inc/usart.h)(0x6880681F)
+I (../Core/Inc/usart.h)(0x68B71F91)
 I (../Core/Inc/pll.h)(0x6881D25E)
 I (../Core/Inc/can.h)(0x68B2F7C2)
 I (../Core/Inc/stm32g4xx_hal_fdcan.h)(0x6897A6A0)
-F (..\Core\Src\can.c)(0x68B3DE3B)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\can.o --omf_browse dgm_v1.2\can.crf --depend dgm_v1.2\can.d)
+F (..\Core\Src\can.c)(0x68B719B2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_dgm_v1.2-IE:\Keil_v5\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-IE:\Keil_v5\Packs\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32G431xx -D_RTE_ -DSTM32G431xx -DUSE_FULL_LL_DRIVER -DHSE_VALUE="8000000" -DHSE_STARTUP_TIMEOUT="100" -DLSE_STARTUP_TIMEOUT="5000" -DLSE_VALUE="32768" -DEXTERNAL_CLOCK_VALUE="12288000" -DHSI_VALUE="16000000" -DLSI_VALUE="32000" -DVDD_VALUE="3300" -DPREFETCH_ENABLE="0" -DINSTRUCTION_CACHE_ENABLE="1" -DDATA_CACHE_ENABLE="1"-o dgm_v1.2\can.o --omf_browse dgm_v1.2\can.crf --depend dgm_v1.2\can.d)
 I (../Core/Inc/can.h)(0x68B2F7C2)
 I (../Core/Inc/main.h)(0x68B2FEFE)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_ll_adc.h)(0x67695B6F)

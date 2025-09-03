@@ -7,6 +7,7 @@
         "calibration.h": "c",
         "controller.h": "c",
         "foc_handle.h": "c",
-        "usr_config.h": "c"
+        "usr_config.h": "c",
+        "stdbool.h": "c"
     }
 }

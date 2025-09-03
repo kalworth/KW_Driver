@@ -3,7 +3,7 @@
 <title>Static Call Graph - [dgm_v1.2\dgm_v1.2]</title></head>
 <body><HR>
 <H1>Static Call Graph for image dgm_v1.2\dgm_v1.2</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Aug 31 13:31:50 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Sep 03 22:25:39 2025
 <BR><P>
 <H3>Maximum Stack Usage =        392 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -860,7 +860,7 @@ Global Symbols
 <P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g4xx_it.o(i.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
 </UL>
-<P><STRONG><a name="[7c]"></a>ENCODER_sample</STRONG> (Thumb, 420 bytes, Stack size 32 bytes, foc_encoder.o(i.ENCODER_sample))
+<P><STRONG><a name="[7c]"></a>ENCODER_sample</STRONG> (Thumb, 428 bytes, Stack size 32 bytes, foc_encoder.o(i.ENCODER_sample))
 <BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = ENCODER_sample &rArr; Encoder_read &rArr; spi_transmit_receive
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder_read
@@ -972,12 +972,12 @@ Global Symbols
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_motor_task
-<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_motor_task
 </UL>
 
-<P><STRONG><a name="[7e]"></a>FSM_loop</STRONG> (Thumb, 276 bytes, Stack size 32 bytes, fsm.o(i.FSM_loop))
+<P><STRONG><a name="[7e]"></a>FSM_loop</STRONG> (Thumb, 278 bytes, Stack size 32 bytes, fsm.o(i.FSM_loop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = FSM_loop &rArr; CALIBRATION_loop &rArr; FSM_input &rArr; process_user_input &rArr; __hardfp_atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real
 </UL>
 <BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_disarm
@@ -1077,8 +1077,8 @@ Global Symbols
 <P><STRONG><a name="[b9]"></a>HAL_FDCAN_RxFifo0Callback</STRONG> (Thumb, 46 bytes, Stack size 48 bytes, can.o(i.HAL_FDCAN_RxFifo0Callback))
 <BR><BR>[Stack]<UL><LI>Max Depth = 328<LI>Call Chain = HAL_FDCAN_RxFifo0Callback &rArr; can_motor_task &rArr; FSM_input &rArr; process_user_input &rArr; __hardfp_atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real
 </UL>
-<BR>[Calls]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_motor_task
-<LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_GetRxMessage
+<BR>[Calls]<UL><LI><a href="#[ca]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_GetRxMessage
+<LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_motor_task
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_IRQHandler
 </UL>
@@ -1675,7 +1675,7 @@ Global Symbols
 <P><STRONG><a name="[56]"></a>fputc</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, usart.o(i.fputc))
 <BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0printf)
 </UL>
-<P><STRONG><a name="[50]"></a>main</STRONG> (Thumb, 494 bytes, Stack size 8 bytes, main.o(i.main))
+<P><STRONG><a name="[50]"></a>main</STRONG> (Thumb, 482 bytes, Stack size 8 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 280<LI>Call Chain = main &rArr; FSM_input &rArr; process_user_input &rArr; __hardfp_atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_loop
@@ -1945,9 +1945,9 @@ Local Symbols
 <P><STRONG><a name="[cb]"></a>can_motor_task</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, can.o(i.can_motor_task))
 <BR><BR>[Stack]<UL><LI>Max Depth = 280<LI>Call Chain = can_motor_task &rArr; FSM_input &rArr; process_user_input &rArr; __hardfp_atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real
 </UL>
-<BR>[Calls]<UL><LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_send_motor_info
+<BR>[Calls]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_input
+<LI><a href="#[119]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_send_motor_info
 <LI><a href="#[118]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_rx_mit_command
-<LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_input
 </UL>
 <BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
 </UL>
@@ -1963,8 +1963,8 @@ Local Symbols
 <P><STRONG><a name="[119]"></a>can_send_motor_info</STRONG> (Thumb, 126 bytes, Stack size 24 bytes, can.o(i.can_send_motor_info))
 <BR><BR>[Stack]<UL><LI>Max Depth = 100<LI>Call Chain = can_send_motor_info &rArr; can_send &rArr; HAL_FDCAN_AddMessageToTxFifoQ &rArr; FDCAN_CopyMessageToRAM
 </UL>
-<BR>[Calls]<UL><LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;float_to_uint
-<LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_send
+<BR>[Calls]<UL><LI><a href="#[11b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_send
+<LI><a href="#[11c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;float_to_uint
 </UL>
 <BR>[Called By]<UL><LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_motor_task
 </UL>

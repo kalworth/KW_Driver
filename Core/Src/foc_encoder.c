@@ -128,7 +128,7 @@ void ENCODER_sample(float dt)
 
     // Position
     Encoder.position = Encoder.turns + (float)Encoder.cnt / (float)ENCODER_CPR;
-		Encoder.position_output = fmodf_pos(Encoder.position, 1.0f) * M_2PI;
+	Encoder.position_output = fmodf_pos(Encoder.position, 1.0f) * 2 * M_PI - M_PI;
 		
     // Elec angle
     Encoder.elec_angle = (UsrConfig.motor_pole_pairs * (float)(Encoder.cnt - UsrConfig.encoder_offset)) / ((float)ENCODER_CPR);

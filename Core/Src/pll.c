@@ -30,15 +30,17 @@ void pll_speed_estimator_rad_update(
     pll->pos_estimate_rad += dt * pll->pll_kp * delta_pos;
     pll->vel_estimate_rad += dt * pll->pll_ki * delta_pos;
 
-//    // 4. 速度抖动抑制
-//    if (fabsf(pll->vel_estimate_rad) < 0.5f * dt * pll->pll_ki) {
-//        pll->vel_estimate_rad = 0.0f;
-//    }
-
     // 5. 输出
     pll->pos_estimate_raw = pll->pos_estimate_rad;
     pll->vel_estimate_raw = pll->vel_estimate_rad;
     // 保证输出在0~2π
     pll->pos_estimate = wrap_pm_pi(pll->pos_estimate_rad) + M_PI;
-    pll->vel_estimate = pll->vel_estimate_rad;
+	
+//	//    // 4. 速度抖动抑制
+//    if (fabsf(pll->vel_estimate_rad) < 0.5f * dt * pll->pll_ki) {
+//        pll->vel_estimate = 0.0f;
+//    }
+//		else{
+//			pll->vel_estimate = pll->vel_estimate_rad;}
+		pll->vel_estimate = pll->vel_estimate_rad;
 }

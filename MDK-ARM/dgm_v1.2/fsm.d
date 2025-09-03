@@ -41,3 +41,4 @@ dgm_v1.2\fsm.o: ../Core/Inc/can.h
 dgm_v1.2\fsm.o: ../Core/Inc/stm32g4xx_hal_fdcan.h
 dgm_v1.2\fsm.o: ../Core/Inc/systick.h
 dgm_v1.2\fsm.o: ../Core/Inc/usart.h
+dgm_v1.2\fsm.o: ../Core/Inc/pll.h
