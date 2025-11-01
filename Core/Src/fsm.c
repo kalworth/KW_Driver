@@ -211,7 +211,7 @@ void FSM_loop(void)
 
 	case FS_MOTOR_MODE:
 	{
-		float current_setpoint = CONTROLLER_loop(&Controller, Pll.vel_estimate, Encoder.position_output);
+		float current_setpoint = CONTROLLER_loop(&Controller, Encoder.velocity_output, Encoder.position_output);
 		Foc.i_q_tar = current_setpoint;
 		FOC_current(&Foc, 0, current_setpoint, Encoder.elec_angle, Encoder.elec_angle);
 		//apply_voltage_timings(Foc.v_bus,0,current_setpoint,Encoder.elec_angle);
@@ -414,6 +414,11 @@ static void print_setup(void)
 	DEBUG("  calib_valid = %d\n\r", UsrConfig.calib_valid);
 	DEBUG("  current_ctrl_p_gain = %f\n\r", UsrConfig.current_ctrl_p_gain);
 	DEBUG("  current_ctrl_i_gain = %f\n\r", UsrConfig.current_ctrl_i_gain);
+	
+	DEBUG(" MIT\n\r");
+	DEBUG("  pos_max = %f\n\r", UsrConfig.pos_max);
+	DEBUG("  vel_max = %f\n\r", UsrConfig.vel_max);
+	DEBUG("  iq_max = %f\n\r", UsrConfig.iq_max);
 }
 
 static void process_user_input(void)
@@ -538,6 +543,21 @@ static void process_user_input(void)
 	{
 		UsrConfig.can_sync_target_enable = atoi(Fsm.cmd_buff + sizeof("can_sync_target_enable = ") - 1);
 		DEBUG("\n\r  can_sync_target_enable = %d\n\r", UsrConfig.can_sync_target_enable);
+	}
+	else if (0 == memcmp(Fsm.cmd_buff, "pos_max = ", sizeof("pos_max = ") - 1))
+	{
+		UsrConfig.pos_max = atof(Fsm.cmd_buff + sizeof("pos_max = ") - 1);
+		DEBUG("\n\r  pos_max = %f\n\r", UsrConfig.pos_max);
+	}
+	else if (0 == memcmp(Fsm.cmd_buff, "vel_max = ", sizeof("vel_max = ") - 1))
+	{
+		UsrConfig.vel_max = atof(Fsm.cmd_buff + sizeof("vel_max = ") - 1);
+		DEBUG("\n\r  vel_max = %f\n\r", UsrConfig.vel_max);
+	}
+	else if (0 == memcmp(Fsm.cmd_buff, "iq_max = ", sizeof("iq_max = ") - 1))
+	{
+		UsrConfig.iq_max = atof(Fsm.cmd_buff + sizeof("iq_max = ") - 1);
+		DEBUG("\n\r  iq_max = %f\n\r", UsrConfig.iq_max);
 	}
 	else
 	{

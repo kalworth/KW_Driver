@@ -3,7 +3,7 @@
 <title>Static Call Graph - [dgm_v1.2\dgm_v1.2]</title></head>
 <body><HR>
 <H1>Static Call Graph for image dgm_v1.2\dgm_v1.2</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Wed Sep 03 22:25:39 2025
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sun Nov 02 00:43:23 2025
 <BR><P>
 <H3>Maximum Stack Usage =        392 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -413,13 +413,13 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[82]"></a>__aeabi_f2d</STRONG> (Thumb, 38 bytes, Stack size 0 bytes, f2d.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
+<BR><BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_user_input
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_setup
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_input_w
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_input_q
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_input
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
 </UL>
 
 <P><STRONG><a name="[61]"></a>__aeabi_d2f</STRONG> (Thumb, 56 bytes, Stack size 8 bytes, d2f.o(.text))
@@ -427,7 +427,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_round
 </UL>
-<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_user_input
 <LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_scanf_really_real
 </UL>
@@ -491,7 +491,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_float_epilogue
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
+<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
 </UL>
 
 <P><STRONG><a name="[6c]"></a>__aeabi_dadd</STRONG> (Thumb, 322 bytes, Stack size 48 bytes, dadd.o(.text))
@@ -703,11 +703,12 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enter_state
 </UL>
 
-<P><STRONG><a name="[87]"></a>CONTROLLER_loop</STRONG> (Thumb, 874 bytes, Stack size 40 bytes, controller.o(i.CONTROLLER_loop))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = CONTROLLER_loop &rArr; TRAJ_plan &rArr; __hardfp_fmax &rArr; __ARM_dcmp4
+<P><STRONG><a name="[87]"></a>CONTROLLER_loop</STRONG> (Thumb, 922 bytes, Stack size 48 bytes, controller.o(i.CONTROLLER_loop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = CONTROLLER_loop &rArr; TRAJ_plan &rArr; __hardfp_fmax &rArr; __ARM_dcmp4
 </UL>
-<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
-<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_eval
+<BR>[Calls]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
+<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_eval
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_loop
 </UL>
@@ -721,155 +722,154 @@ Global Symbols
 <BR><BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enter_state
 </UL>
 
-<P><STRONG><a name="[8a]"></a>DRV8323_calibrate</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_calibrate))
+<P><STRONG><a name="[8b]"></a>DRV8323_calibrate</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_calibrate))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DRV8323_calibrate &rArr; DRV8323_write_reg &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
 </UL>
 
-<P><STRONG><a name="[8c]"></a>DRV8323_disable_gd</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, drv8323.o(i.DRV8323_disable_gd))
+<P><STRONG><a name="[8d]"></a>DRV8323_disable_gd</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, drv8323.o(i.DRV8323_disable_gd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = DRV8323_disable_gd &rArr; DRV8323_read_reg &rArr; SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_switch_off_pwm
 </UL>
 
-<P><STRONG><a name="[8e]"></a>DRV8323_enable_gd</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, drv8323.o(i.DRV8323_enable_gd))
+<P><STRONG><a name="[8f]"></a>DRV8323_enable_gd</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, drv8323.o(i.DRV8323_enable_gd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = DRV8323_enable_gd &rArr; DRV8323_read_reg &rArr; SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_switch_on_pwm
 </UL>
 
-<P><STRONG><a name="[8f]"></a>DRV8323_getFault</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, drv8323.o(i.DRV8323_getFault))
+<P><STRONG><a name="[90]"></a>DRV8323_getFault</STRONG> (Thumb, 40 bytes, Stack size 16 bytes, drv8323.o(i.DRV8323_getFault))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = DRV8323_getFault &rArr; DRV8323_read_FSR1 &rArr; DRV8323_read_reg &rArr; SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_us
-<LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_FSR2
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_FSR1
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_us
+<LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_FSR2
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_FSR1
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_loop
 </UL>
 
-<P><STRONG><a name="[90]"></a>DRV8323_read_FSR1</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_read_FSR1))
+<P><STRONG><a name="[91]"></a>DRV8323_read_FSR1</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_read_FSR1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = DRV8323_read_FSR1 &rArr; DRV8323_read_reg &rArr; SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
+<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_getFault
-</UL>
-
-<P><STRONG><a name="[92]"></a>DRV8323_read_FSR2</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_read_FSR2))
-<BR><BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_getFault
+<BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_getFault
 </UL>
 
-<P><STRONG><a name="[8d]"></a>DRV8323_read_reg</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, drv8323.o(i.DRV8323_read_reg))
+<P><STRONG><a name="[93]"></a>DRV8323_read_FSR2</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_read_FSR2))
+<BR><BR>[Called By]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_getFault
+</UL>
+
+<P><STRONG><a name="[8e]"></a>DRV8323_read_reg</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, drv8323.o(i.DRV8323_read_reg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = DRV8323_read_reg &rArr; SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RW_byte
+<BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RW_byte
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
-<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_FSR1
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_enable_gd
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_disable_gd
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_FSR1
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_enable_gd
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_disable_gd
 </UL>
 
-<P><STRONG><a name="[94]"></a>DRV8323_reset</STRONG> (Thumb, 256 bytes, Stack size 32 bytes, drv8323.o(i.DRV8323_reset))
+<P><STRONG><a name="[95]"></a>DRV8323_reset</STRONG> (Thumb, 256 bytes, Stack size 32 bytes, drv8323.o(i.DRV8323_reset))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = DRV8323_reset &rArr; DRV8323_write_DCR &rArr; DRV8323_write_reg &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_us
-<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_OCPCR
-<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_LSR
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_HSR
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_DCR
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_CSACR
-<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_set_enable
-<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_calibrate
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_us
+<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_OCPCR
+<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_LSR
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_HSR
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_DCR
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_CSACR
+<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_set_enable
+<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_calibrate
 </UL>
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_input
 </UL>
 
-<P><STRONG><a name="[95]"></a>DRV8323_set_enable</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_set_enable))
+<P><STRONG><a name="[96]"></a>DRV8323_set_enable</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_set_enable))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DRV8323_set_enable &rArr; SYSTICK_delay_ms &rArr; SYSTICK_delay_us
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_ms
+<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_ms
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
 </UL>
 
-<P><STRONG><a name="[99]"></a>DRV8323_write_CSACR</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, drv8323.o(i.DRV8323_write_CSACR))
+<P><STRONG><a name="[9a]"></a>DRV8323_write_CSACR</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, drv8323.o(i.DRV8323_write_CSACR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = DRV8323_write_CSACR &rArr; DRV8323_write_reg &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
 </UL>
 
-<P><STRONG><a name="[96]"></a>DRV8323_write_DCR</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, drv8323.o(i.DRV8323_write_DCR))
+<P><STRONG><a name="[97]"></a>DRV8323_write_DCR</STRONG> (Thumb, 60 bytes, Stack size 16 bytes, drv8323.o(i.DRV8323_write_DCR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = DRV8323_write_DCR &rArr; DRV8323_write_reg &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
 </UL>
 
-<P><STRONG><a name="[97]"></a>DRV8323_write_HSR</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_write_HSR))
+<P><STRONG><a name="[98]"></a>DRV8323_write_HSR</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_write_HSR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DRV8323_write_HSR &rArr; DRV8323_write_reg &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
 </UL>
 
-<P><STRONG><a name="[98]"></a>DRV8323_write_LSR</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_write_LSR))
+<P><STRONG><a name="[99]"></a>DRV8323_write_LSR</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, drv8323.o(i.DRV8323_write_LSR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DRV8323_write_LSR &rArr; DRV8323_write_reg &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
+<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
 </UL>
 
-<P><STRONG><a name="[9a]"></a>DRV8323_write_OCPCR</STRONG> (Thumb, 32 bytes, Stack size 4 bytes, drv8323.o(i.DRV8323_write_OCPCR))
+<P><STRONG><a name="[9b]"></a>DRV8323_write_OCPCR</STRONG> (Thumb, 32 bytes, Stack size 4 bytes, drv8323.o(i.DRV8323_write_OCPCR))
 <BR><BR>[Stack]<UL><LI>Max Depth = 4<LI>Call Chain = DRV8323_write_OCPCR
 </UL>
-<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
 </UL>
 
-<P><STRONG><a name="[8b]"></a>DRV8323_write_reg</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, drv8323.o(i.DRV8323_write_reg))
+<P><STRONG><a name="[8c]"></a>DRV8323_write_reg</STRONG> (Thumb, 30 bytes, Stack size 12 bytes, drv8323.o(i.DRV8323_write_reg))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = DRV8323_write_reg &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_transmit_receive_spi1
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_transmit_receive_spi1
 </UL>
-<BR>[Called By]<UL><LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_LSR
-<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_HSR
-<LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_DCR
-<LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_CSACR
-<LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_enable_gd
-<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_disable_gd
-<LI><a href="#[8a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_calibrate
+<BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_LSR
+<LI><a href="#[98]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_HSR
+<LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_DCR
+<LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_CSACR
+<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_enable_gd
+<LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_disable_gd
+<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_calibrate
 </UL>
 
 <P><STRONG><a name="[7]"></a>DebugMon_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g4xx_it.o(i.DebugMon_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
 </UL>
-<P><STRONG><a name="[7c]"></a>ENCODER_sample</STRONG> (Thumb, 428 bytes, Stack size 32 bytes, foc_encoder.o(i.ENCODER_sample))
-<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = ENCODER_sample &rArr; Encoder_read &rArr; spi_transmit_receive
+<P><STRONG><a name="[7c]"></a>ENCODER_sample</STRONG> (Thumb, 404 bytes, Stack size 24 bytes, foc_encoder.o(i.ENCODER_sample))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = ENCODER_sample &rArr; Encoder_read &rArr; spi_transmit_receive
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder_read
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
+<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder_read
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_2_IRQHandler
 </UL>
 
-<P><STRONG><a name="[9d]"></a>Encoder_read</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, foc_encoder.o(i.Encoder_read))
+<P><STRONG><a name="[9e]"></a>Encoder_read</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, foc_encoder.o(i.Encoder_read))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = Encoder_read &rArr; spi_transmit_receive
 </UL>
 <BR>[Calls]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_transmit_receive
@@ -918,8 +918,8 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_switch_on_pwm
 </UL>
-<BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enter_state
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
+<LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enter_state
 </UL>
 
 <P><STRONG><a name="[a5]"></a>FOC_current</STRONG> (Thumb, 432 bytes, Stack size 72 bytes, foc_handle.o(i.FOC_current))
@@ -938,9 +938,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PWMC_switch_off_pwm
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_loop
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
+<LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_loop
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit_state
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
 </UL>
 
 <P><STRONG><a name="[120]"></a>FOC_reset</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, foc_handle.o(i.FOC_reset))
@@ -950,7 +950,7 @@ Global Symbols
 <P><STRONG><a name="[ab]"></a>FOC_zero_current</STRONG> (Thumb, 72 bytes, Stack size 32 bytes, foc_handle.o(i.FOC_zero_current))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = FOC_zero_current &rArr; SYSTICK_delay_us
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_us
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_us
 </UL>
 <BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -963,7 +963,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 272<LI>Call Chain = FSM_input &rArr; process_user_input &rArr; __hardfp_atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real
 </UL>
 <BR>[Calls]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USR_CONFIG_save_config
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_can_data
 <LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;process_user_input
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_setup
@@ -972,21 +972,21 @@ Global Symbols
 <LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
+<LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;can_motor_task
 </UL>
 
-<P><STRONG><a name="[7e]"></a>FSM_loop</STRONG> (Thumb, 278 bytes, Stack size 32 bytes, fsm.o(i.FSM_loop))
+<P><STRONG><a name="[7e]"></a>FSM_loop</STRONG> (Thumb, 276 bytes, Stack size 32 bytes, fsm.o(i.FSM_loop))
 <BR><BR>[Stack]<UL><LI>Max Depth = 368<LI>Call Chain = FSM_loop &rArr; CALIBRATION_loop &rArr; FSM_input &rArr; process_user_input &rArr; __hardfp_atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real
 </UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_disarm
+<BR>[Calls]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_disarm
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_current
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_getFault
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_getFault
 <LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CONTROLLER_loop
 <LI><a href="#[b2]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exit_state
 <LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enter_state
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ADC1_2_IRQHandler
@@ -1405,7 +1405,7 @@ Global Symbols
 <P><STRONG><a name="[aa]"></a>PWMC_switch_off_pwm</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, foc_handle.o(i.PWMC_switch_off_pwm))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = PWMC_switch_off_pwm &rArr; DRV8323_disable_gd &rArr; DRV8323_read_reg &rArr; SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_disable_gd
+<BR>[Calls]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_disable_gd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_disarm
 </UL>
@@ -1413,7 +1413,7 @@ Global Symbols
 <P><STRONG><a name="[a4]"></a>PWMC_switch_on_pwm</STRONG> (Thumb, 40 bytes, Stack size 0 bytes, foc_handle.o(i.PWMC_switch_on_pwm))
 <BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = PWMC_switch_on_pwm &rArr; DRV8323_enable_gd &rArr; DRV8323_read_reg &rArr; SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_enable_gd
+<BR>[Calls]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_enable_gd
 </UL>
 <BR>[Called By]<UL><LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_arm
 </UL>
@@ -1421,33 +1421,33 @@ Global Symbols
 <P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g4xx_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
 </UL>
-<P><STRONG><a name="[93]"></a>SPI_RW_byte</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, drv8323.o(i.SPI_RW_byte))
+<P><STRONG><a name="[94]"></a>SPI_RW_byte</STRONG> (Thumb, 16 bytes, Stack size 8 bytes, drv8323.o(i.SPI_RW_byte))
 <BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_transmit_receive_spi1
+<BR>[Calls]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;spi_transmit_receive_spi1
 </UL>
-<BR>[Called By]<UL><LI><a href="#[8d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
+<BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_read_reg
 </UL>
 
 <P><STRONG><a name="[6]"></a>SVC_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32g4xx_it.o(i.SVC_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
 </UL>
-<P><STRONG><a name="[9b]"></a>SYSTICK_delay_ms</STRONG> (Thumb, 22 bytes, Stack size 12 bytes, systick.o(i.SYSTICK_delay_ms))
+<P><STRONG><a name="[9c]"></a>SYSTICK_delay_ms</STRONG> (Thumb, 22 bytes, Stack size 12 bytes, systick.o(i.SYSTICK_delay_ms))
 <BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = SYSTICK_delay_ms &rArr; SYSTICK_delay_us
 </UL>
-<BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_us
+<BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_us
 </UL>
-<BR>[Called By]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_set_enable
+<BR>[Called By]<UL><LI><a href="#[96]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_set_enable
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[91]"></a>SYSTICK_delay_us</STRONG> (Thumb, 60 bytes, Stack size 20 bytes, systick.o(i.SYSTICK_delay_us))
+<P><STRONG><a name="[92]"></a>SYSTICK_delay_us</STRONG> (Thumb, 60 bytes, Stack size 20 bytes, systick.o(i.SYSTICK_delay_us))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SYSTICK_delay_us
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_zero_current
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_ms
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
-<LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_getFault
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_ms
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_getFault
 </UL>
 
 <P><STRONG><a name="[cd]"></a>SYSTICK_get_ms_since</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, systick.o(i.SYSTICK_get_ms_since))
@@ -1483,11 +1483,11 @@ Global Symbols
 <P><STRONG><a name="[3b]"></a>TIM6_DAC_IRQHandler</STRONG> (Thumb, 58 bytes, Stack size 0 bytes, stm32g4xx_it.o(i.TIM6_DAC_IRQHandler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32g431xx.o(RESET)
 </UL>
-<P><STRONG><a name="[89]"></a>TRAJ_eval</STRONG> (Thumb, 204 bytes, Stack size 0 bytes, traptraj.o(i.TRAJ_eval))
+<P><STRONG><a name="[8a]"></a>TRAJ_eval</STRONG> (Thumb, 204 bytes, Stack size 0 bytes, traptraj.o(i.TRAJ_eval))
 <BR><BR>[Called By]<UL><LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CONTROLLER_loop
 </UL>
 
-<P><STRONG><a name="[88]"></a>TRAJ_plan</STRONG> (Thumb, 506 bytes, Stack size 64 bytes, traptraj.o(i.TRAJ_plan))
+<P><STRONG><a name="[89]"></a>TRAJ_plan</STRONG> (Thumb, 506 bytes, Stack size 64 bytes, traptraj.o(i.TRAJ_plan))
 <BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = TRAJ_plan &rArr; __hardfp_fmax &rArr; __ARM_dcmp4
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
@@ -1524,7 +1524,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_input
 </UL>
 
-<P><STRONG><a name="[125]"></a>USR_CONFIG_set_default_config</STRONG> (Thumb, 164 bytes, Stack size 0 bytes, usr_config.o(i.USR_CONFIG_set_default_config))
+<P><STRONG><a name="[125]"></a>USR_CONFIG_set_default_config</STRONG> (Thumb, 180 bytes, Stack size 0 bytes, usr_config.o(i.USR_CONFIG_set_default_config))
 <BR><BR>[Called By]<UL><LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
@@ -1544,7 +1544,8 @@ Global Symbols
 <P><STRONG><a name="[83]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USR_CONFIG_save_config
+<BR>[Called By]<UL><LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
+<LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USR_CONFIG_save_config
 <LI><a href="#[50]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_can_data
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_loop
@@ -1556,7 +1557,6 @@ Global Symbols
 <LI><a href="#[b0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_input_w
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;debug_input_q
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_input
-<LI><a href="#[7f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_loop
 </UL>
 
 <P><STRONG><a name="[13d]"></a>__c89printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printfa.o(i.__0printf), UNUSED)
@@ -1586,10 +1586,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__ARM_dcmp4
 </UL>
-<BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
+<BR>[Called By]<UL><LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
 </UL>
 
-<P><STRONG><a name="[9e]"></a>__hardfp_fmodf</STRONG> (Thumb, 176 bytes, Stack size 16 bytes, fmodf.o(i.__hardfp_fmodf))
+<P><STRONG><a name="[88]"></a>__hardfp_fmodf</STRONG> (Thumb, 176 bytes, Stack size 16 bytes, fmodf.o(i.__hardfp_fmodf))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = __hardfp_fmodf &rArr; _frem &rArr; _float_epilogue
 </UL>
 <BR>[Calls]<UL><LI><a href="#[6a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_frem
@@ -1597,8 +1597,8 @@ Global Symbols
 <LI><a href="#[111]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__mathlib_flt_invalid
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fast_sincos
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ENCODER_sample
 <LI><a href="#[127]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wrap_pm_pi
+<LI><a href="#[87]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CONTROLLER_loop
 </UL>
 
 <P><STRONG><a name="[85]"></a>__hardfp_round</STRONG> (Thumb, 194 bytes, Stack size 64 bytes, round.o(i.__hardfp_round))
@@ -1620,11 +1620,11 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;apply_voltage_timings
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_current
-<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
+<LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TRAJ_plan
 </UL>
 
 <P><STRONG><a name="[111]"></a>__mathlib_flt_invalid</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, funder.o(i.__mathlib_flt_invalid))
-<BR><BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
+<BR><BR>[Called By]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
 </UL>
 
 <P><STRONG><a name="[10e]"></a>__read_errno</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, errno.o(i.__read_errno))
@@ -1639,7 +1639,7 @@ Global Symbols
 
 <P><STRONG><a name="[10f]"></a>__set_errno</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, errno.o(i.__set_errno))
 <BR><BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_sqrtf
-<LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
+<LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
 <LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_atof
 </UL>
 
@@ -1675,7 +1675,7 @@ Global Symbols
 <P><STRONG><a name="[56]"></a>fputc</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, usart.o(i.fputc))
 <BR>[Address Reference Count : 1]<UL><LI> printfa.o(i.__0printf)
 </UL>
-<P><STRONG><a name="[50]"></a>main</STRONG> (Thumb, 482 bytes, Stack size 8 bytes, main.o(i.main))
+<P><STRONG><a name="[50]"></a>main</STRONG> (Thumb, 490 bytes, Stack size 8 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 280<LI>Call Chain = main &rArr; FSM_input &rArr; process_user_input &rArr; __hardfp_atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real
 </UL>
 <BR>[Calls]<UL><LI><a href="#[cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LED_loop
@@ -1683,8 +1683,8 @@ Global Symbols
 <LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USR_CONFIG_set_default_config
 <LI><a href="#[105]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USR_CONFIG_read_config
 <LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_init
-<LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_ms
-<LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
+<LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SYSTICK_delay_ms
+<LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_reset
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_USART2_UART_Init
 <LI><a href="#[fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM6_Init
 <LI><a href="#[f9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MX_TIM1_Init
@@ -1723,11 +1723,11 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_input
 </UL>
 
-<P><STRONG><a name="[9c]"></a>spi_transmit_receive_spi1</STRONG> (Thumb, 84 bytes, Stack size 20 bytes, drv8323.o(i.spi_transmit_receive_spi1))
+<P><STRONG><a name="[9d]"></a>spi_transmit_receive_spi1</STRONG> (Thumb, 84 bytes, Stack size 20 bytes, drv8323.o(i.spi_transmit_receive_spi1))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = spi_transmit_receive_spi1
 </UL>
-<BR>[Called By]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RW_byte
-<LI><a href="#[8b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
+<BR>[Called By]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SPI_RW_byte
+<LI><a href="#[8c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DRV8323_write_reg
 </UL>
 <P>
 <H3>
@@ -1736,7 +1736,7 @@ Local Symbols
 <P><STRONG><a name="[9f]"></a>spi_transmit_receive</STRONG> (Thumb, 84 bytes, Stack size 20 bytes, foc_encoder.o(i.spi_transmit_receive))
 <BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = spi_transmit_receive
 </UL>
-<BR>[Called By]<UL><LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder_read
+<BR>[Called By]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Encoder_read
 </UL>
 
 <P><STRONG><a name="[a2]"></a>flash_wait_for_last_operation</STRONG> (Thumb, 70 bytes, Stack size 0 bytes, flash.o(i.flash_wait_for_last_operation))
@@ -1747,7 +1747,7 @@ Local Symbols
 <P><STRONG><a name="[a6]"></a>fast_sincos</STRONG> (Thumb, 236 bytes, Stack size 24 bytes, foc_handle.o(i.fast_sincos))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = fast_sincos &rArr; __hardfp_fmodf &rArr; _frem &rArr; _float_epilogue
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_current
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;inverse_park
@@ -1794,12 +1794,12 @@ Local Symbols
 <P><STRONG><a name="[b3]"></a>enter_state</STRONG> (Thumb, 94 bytes, Stack size 8 bytes, fsm.o(i.enter_state))
 <BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = enter_state &rArr; FOC_arm &rArr; PWMC_switch_on_pwm &rArr; DRV8323_enable_gd &rArr; DRV8323_read_reg &rArr; SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_reset
+<BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_start
+<LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_reset
 <LI><a href="#[80]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_arm
 <LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CONTROLLER_reset
 <LI><a href="#[ad]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_setup
 <LI><a href="#[11e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;print_menu
-<LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_start
 <LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
@@ -1809,8 +1809,8 @@ Local Symbols
 <P><STRONG><a name="[b2]"></a>exit_state</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, fsm.o(i.exit_state))
 <BR><BR>[Stack]<UL><LI>Max Depth = 76<LI>Call Chain = exit_state &rArr; FOC_disarm &rArr; PWMC_switch_off_pwm &rArr; DRV8323_disable_gd &rArr; DRV8323_read_reg &rArr; SPI_RW_byte &rArr; spi_transmit_receive_spi1
 </UL>
-<BR>[Calls]<UL><LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_disarm
-<LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_end
+<BR>[Calls]<UL><LI><a href="#[122]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CALIBRATION_end
+<LI><a href="#[81]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FOC_disarm
 <LI><a href="#[83]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_loop
@@ -1824,7 +1824,7 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[b3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;enter_state
 </UL>
 
-<P><STRONG><a name="[ad]"></a>print_setup</STRONG> (Thumb, 548 bytes, Stack size 16 bytes, fsm.o(i.print_setup))
+<P><STRONG><a name="[ad]"></a>print_setup</STRONG> (Thumb, 618 bytes, Stack size 16 bytes, fsm.o(i.print_setup))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = print_setup &rArr; __2printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[82]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
@@ -1834,7 +1834,7 @@ Local Symbols
 <LI><a href="#[86]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FSM_input
 </UL>
 
-<P><STRONG><a name="[b1]"></a>process_user_input</STRONG> (Thumb, 2068 bytes, Stack size 32 bytes, fsm.o(i.process_user_input))
+<P><STRONG><a name="[b1]"></a>process_user_input</STRONG> (Thumb, 2226 bytes, Stack size 32 bytes, fsm.o(i.process_user_input))
 <BR><BR>[Stack]<UL><LI>Max Depth = 256<LI>Call Chain = process_user_input &rArr; __hardfp_atof &rArr; __strtod_int &rArr; _local_sscanf &rArr; _scanf_real
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
@@ -1851,7 +1851,7 @@ Local Symbols
 <P><STRONG><a name="[127]"></a>wrap_pm_pi</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, pll.o(i.wrap_pm_pi))
 <BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = wrap_pm_pi &rArr; __hardfp_fmodf &rArr; _frem &rArr; _float_epilogue
 </UL>
-<BR>[Calls]<UL><LI><a href="#[9e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
+<BR>[Calls]<UL><LI><a href="#[88]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__hardfp_fmodf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;pll_speed_estimator_rad_update
 </UL>
@@ -1952,8 +1952,8 @@ Local Symbols
 <BR>[Called By]<UL><LI><a href="#[b9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_FDCAN_RxFifo0Callback
 </UL>
 
-<P><STRONG><a name="[118]"></a>can_rx_mit_command</STRONG> (Thumb, 166 bytes, Stack size 32 bytes, can.o(i.can_rx_mit_command))
-<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = can_rx_mit_command
+<P><STRONG><a name="[118]"></a>can_rx_mit_command</STRONG> (Thumb, 168 bytes, Stack size 40 bytes, can.o(i.can_rx_mit_command))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = can_rx_mit_command
 </UL>
 <BR>[Calls]<UL><LI><a href="#[11a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;uint_to_float
 </UL>

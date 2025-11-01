@@ -67,6 +67,11 @@ typedef struct sUsrConfig
     int can_sync_target_enable; // 0 Disable : else Enable
 
     uint16_t Initangle_Hall;
+		
+//		// MIT
+		float pos_max;
+		float vel_max;
+		float iq_max;
 
     uint32_t crc;
 } tUsrConfig;

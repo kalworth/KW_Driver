@@ -175,6 +175,8 @@ int main(void)
 	
   UsrConfig.control_mode = CONTROL_MODE_CURRENT;
 	UsrConfig.can_timeout_ms=1000;
+  UsrConfig.pos_max = 3.14f;  // 目前只适配了角度范围在【-3.14,3.14】的情况
+
 	SYSTICK_delay_ms(200);
 	FOC_zero_current(&Foc);
 	FSM_input(CMD_MENU);
@@ -203,7 +205,7 @@ int main(void)
 		}
 //		DEBUG("%f,%f\r\n",Encoder.velocity_output,Pll.vel_estimate);
 //		DEBUG("%f,%f,%f\r\n",Foc.i_q_tar,Foc.i_d_filt,Foc.i_q_filt);
-//		DEBUG("%f\r\n",Encoder.position_output);
+//		DEBUG("%f,%f\r\n",Encoder.position_output,Encoder.position);
 //		DEBUG("%d,%d\r\n",Foc.adc_phase_a,Foc.adc_phase_b);
 //      DEBUG("%f,%f,%f\r\n",Encoder.position_output,Pll.vel_estimate,Foc.i_q_filt);
 //		vofa_send_data(Encoder.position_output);

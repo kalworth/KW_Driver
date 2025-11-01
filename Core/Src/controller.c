@@ -61,7 +61,8 @@ float CONTROLLER_loop(ControllerStruct *controller, float velocity, float positi
 	case CONTROL_MODE_CURRENT:
 	{
 		// Current limiting
-		float curr_tmp = controller->mit_kp*(controller->input_position-position) + controller->mit_kd*(controller->input_velocity-velocity)+controller->input_current;
+
+		float curr_tmp = controller->mit_kp*wrap_pm(controller->input_position - position,UsrConfig.pos_max) + controller->mit_kd*(controller->input_velocity-velocity)+controller->input_current;
 		mCurrSetPoint = CLAMP(curr_tmp, -UsrConfig.current_limit, UsrConfig.current_limit);
 		current_des = mCurrSetPoint;
 	}

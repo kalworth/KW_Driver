@@ -18,7 +18,7 @@ void USR_CONFIG_set_default_config(void)
 
     // Calib
     UsrConfig.calib_valid = 0;
-    UsrConfig.calib_current = 1.0f;
+    UsrConfig.calib_current = 1.2f;
     UsrConfig.calib_max_voltage = 10.0f;
 
     // Control
@@ -44,6 +44,11 @@ void USR_CONFIG_set_default_config(void)
     UsrConfig.can_id = 55;
     UsrConfig.can_timeout_ms = 0;
     UsrConfig.can_sync_target_enable = 0;
+		
+	// MIT
+	UsrConfig.pos_max = 0;
+	UsrConfig.vel_max = 0;
+	UsrConfig.iq_max = 0;
 
 }
 

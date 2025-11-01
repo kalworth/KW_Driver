@@ -72,8 +72,22 @@ uint16_t Encoder_read(void)
 	return (rxData>>2);
 }
 
+// 计算最短角度差函数
+//int32_t wrap_diff(int32_t current, int32_t last, int32_t modulus) {
+//    int32_t diff = current - last;
+//    if (diff > modulus / 2) {
+//        diff -= modulus;
+//    } else if (diff < -modulus / 2) {
+//        diff += modulus;
+//    }
+//    return diff;
+//}
+
+//static uint8_t fst_flag = 0;
 void ENCODER_sample(float dt)
 {
+//	if(!fst_flag){Encoder.cnt_last = Encoder_read();fst_flag=1;}
+	
     if (UsrConfig.calib_valid)
     {
         // dir swap
@@ -128,7 +142,7 @@ void ENCODER_sample(float dt)
 
     // Position
     Encoder.position = Encoder.turns + (float)Encoder.cnt / (float)ENCODER_CPR;
-	Encoder.position_output = fmodf_pos(Encoder.position, 1.0f) * 2 * M_PI - M_PI;
+	Encoder.position_output = (Encoder.position - Encoder.turns)*6.28f - 3.14f;
 		
     // Elec angle
     Encoder.elec_angle = (UsrConfig.motor_pole_pairs * (float)(Encoder.cnt - UsrConfig.encoder_offset)) / ((float)ENCODER_CPR);

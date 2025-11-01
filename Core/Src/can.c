@@ -199,9 +199,12 @@ extern uint8_t err_flag;
 static void can_send_motor_info(void)
 {
   uint8_t can_tx_data[8];
-  uint16_t pos_tmp = float_to_uint(Encoder.position_output,  -M_PI,  M_PI,  16);
-  uint16_t vel_tmp = float_to_uint(Pll.vel_estimate,  -45.0f,  45.0f,  16);
-  uint16_t tor_tmp = float_to_uint(Foc.i_q_filt,  -2.0f,  2.0f,  16);
+  uint16_t pos_tmp = float_to_uint(Encoder.position_output,  -UsrConfig.pos_max,  UsrConfig.pos_max,  16);
+  uint16_t vel_tmp = float_to_uint(Encoder.velocity_output,  -UsrConfig.vel_max,  UsrConfig.vel_max,  16);
+  uint16_t tor_tmp = float_to_uint(Foc.i_q_filt,  -UsrConfig.iq_max,  UsrConfig.iq_max,  16);
+//  uint16_t pos_tmp = float_to_uint(Encoder.position_output,  -12.5,  12.5,  16);
+//  uint16_t vel_tmp = float_to_uint(Pll.vel_estimate,  -45,  45,  16);
+//  uint16_t tor_tmp = float_to_uint(Foc.i_q_filt,  -2,  2,  16);
 
   can_tx_data[0] = UsrConfig.can_id;
   can_tx_data[1] = err_flag;
@@ -223,11 +226,11 @@ static void can_rx_mit_command(uint8_t data[])
   uint16_t kd_tmp = ((uint16_t)data[5])<<4 | (data[6]>>4);
   uint16_t tf_tmp = ((uint16_t)(data[6]& 0x0F))<<8 | data[7];
 
-  Controller.input_position = uint_to_float(pos_tmp,-M_PI,M_PI,16);
-  Controller.input_velocity = uint_to_float(vel_tmp,-45.0f,45.0f,12);
+  Controller.input_position = uint_to_float(pos_tmp,-UsrConfig.pos_max,UsrConfig.pos_max,16);
+  Controller.input_velocity = uint_to_float(vel_tmp,-UsrConfig.vel_max,UsrConfig.vel_max,12);
   Controller.mit_kp = uint_to_float(kp_tmp,0,10.0f,12);
   Controller.mit_kd = uint_to_float(kd_tmp,0,1.0f,12);
-  Controller.input_current = uint_to_float(tf_tmp,-2.0f,2.0f,12);
+  Controller.input_current = uint_to_float(tf_tmp,-UsrConfig.iq_max,UsrConfig.iq_max,12);
 }
 
 static void can_motor_task(uint32_t rx_id)

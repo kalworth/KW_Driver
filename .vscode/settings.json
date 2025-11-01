@@ -8,6 +8,7 @@
         "controller.h": "c",
         "foc_handle.h": "c",
         "usr_config.h": "c",
-        "stdbool.h": "c"
+        "stdbool.h": "c",
+        "pll.h": "c"
     }
 }
