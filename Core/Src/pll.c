@@ -1,7 +1,7 @@
 #include "pll.h"
 #include "util.h"
 
-PLLSpeedEstimatorRad Pll;
+//PLLSpeedEstimatorRad Pll;
 
 
 // ≥ı ºªØ

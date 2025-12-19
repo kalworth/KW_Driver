@@ -13,7 +13,7 @@ typedef struct {
     float vel_estimate_rad;
 } PLLSpeedEstimatorRad;
 
-extern PLLSpeedEstimatorRad Pll;
+//extern PLLSpeedEstimatorRad Pll;
 
 void pll_speed_estimator_rad_init(PLLSpeedEstimatorRad* pll, float bandwidth);
 void pll_speed_estimator_rad_update(

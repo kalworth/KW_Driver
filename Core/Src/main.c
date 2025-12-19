@@ -171,7 +171,7 @@ int main(void)
     DEBUG("\n\rConfig loaded faile set to default\n\r");
   }
 	
-	pll_speed_estimator_rad_init(&Pll, UsrConfig.current_ctrl_bandwidth);
+//	pll_speed_estimator_rad_init(&Pll, UsrConfig.current_ctrl_bandwidth);
 	
   UsrConfig.control_mode = CONTROL_MODE_CURRENT;
 	UsrConfig.can_timeout_ms=1000;

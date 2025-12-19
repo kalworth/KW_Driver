@@ -219,7 +219,7 @@ void ADC1_2_IRQHandler(void)
 	if(LL_ADC_IsActiveFlag_JEOS(ADC2)){
 		
 		ENCODER_sample(DT);
-		pll_speed_estimator_rad_update(&Pll,Encoder.position_output,DT);
+		//pll_speed_estimator_rad_update(&Pll,Encoder.position_output,DT);
 		
 		Foc.adc_vbus = ADC2->JDR1;
 		Foc.adc_phase_a = ADC1->JDR1;
