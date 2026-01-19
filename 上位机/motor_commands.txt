@@ -1,0 +1,92 @@
+[
+    {
+        "name": "系统复位 r",
+        "cmd": "r",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "获取位置 p",
+        "cmd": "p",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "检查配置 x",
+        "cmd": "x",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "获取母线电压 v",
+        "cmd": "v",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "电机模式 m",
+        "cmd": "m",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "校准 c",
+        "cmd": "c",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "清除错误 z",
+        "cmd": "z",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "设置 s",
+        "cmd": "s",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "更新配置 u",
+        "cmd": "u",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "退出到菜单 Esc",
+        "cmd": "\u001b",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "iq递增 q",
+        "cmd": "q",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "iq递减 w",
+        "cmd": "w",
+        "editable": false,
+        "is_hex": false
+    },
+    {
+        "name": "自定义指令1",
+        "cmd": "",
+        "editable": true,
+        "is_hex": false
+    },
+    {
+        "name": "自定义指令2",
+        "cmd": "",
+        "editable": true,
+        "is_hex": false
+    },
+    {
+        "name": "自定义指令3",
+        "cmd": "",
+        "editable": true,
+        "is_hex": false
+    }
+]

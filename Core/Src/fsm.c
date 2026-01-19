@@ -331,7 +331,7 @@ static void exit_state(void)
 		DEBUG("Calibration End\n\r\n\r");
 		Fsm.ready = 1;
 		break;
-
+	
 	case FS_UART_SETUP:
 		DEBUG("\n\r");
 		Fsm.ready = 1;
